@@ -12,19 +12,23 @@
 </head>
 <body>
     <header class="header top-header" id="header">
-        <div class="container top-header-section1">
-            <div class="row">
-                <div class="col-6 top-nav1">
-                    <a href="#link" class="top-nav-item text-decoration-none"><img src="media/pencil.png" class="icon"> wishlist</a>
-                    <a href="#link" class="top-nav-item text-decoration-none"><svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg> my account</a>
-                    <a href="#link" class="top-nav-item text-decoration-none"><svg class="icon icon-cart"><use xlink:href="#icon-cart"></use></svg> my cart</a>
-                    <a href="#link" class="top-nav-item text-decoration-none"><svg class="icon icon-checkmark"><use xlink:href="#icon-checkmark"></use></svg> checkout</a>
-                </div>
-                <div class="col-6 d-flex top-nav2">
-                    <div class="header-text">Welcome To Venedor!</div>
-                    <a href="#link" class="login-link">Login</a>
-                    <span>or</span>
-                    <a href="#link" class="create-account">Create An Account</a>
+        <div class="full-width-header"> <!-- To get background color full width of page -->
+            <div class="container top-header-section1">
+                <div class="row">
+                    <div class="col-6 top-nav1">
+                        <a href="#link" class="top-nav1-item text-decoration-none"><img src="media/pencil.png" class="icon"> my wishlist</a>
+                        <a href="#link" class="top-nav1-item text-decoration-none"><svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg> my account</a>
+                        <a href="#link" class="top-nav1-item text-decoration-none"><svg class="icon icon-cart"><use xlink:href="#icon-cart"></use></svg> my cart</a>
+                        <a href="#link" class="top-nav1-item text-decoration-none"><svg class="icon icon-checkmark"><use xlink:href="#icon-checkmark"></use></svg> checkout</a>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end top-nav2">
+                        <div class="header-text">Welcome To Venedor!</div>
+                        <div class="accounts">
+                            <a href="#link" class="login-link"> Login</a>
+                            <span> or</span>
+                            <a href="#link" class="create-account"> Create An Account</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -35,9 +39,9 @@
                         <img src="media/venedorlogo.png" alt="logo picture" class="logo-picture img-fluid">
                     </div>
                 </div>
-                <div class="col-2">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="col-8 d-inline-flex justify-content-end shop-buttons">
+                    <div class="dropdown dropdown1">
+                        <button class="btn btn-secondary currency-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             &dollar; US Dollar
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -45,10 +49,8 @@
                             <a class="dropdown-item"  href="#">&pound; Pound</a>
                         </div>
                     </div>
-                </div>
-                <div class="col-2">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="dropdown dropdown2">
+                        <button class="btn btn-secondary lang-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img src="media/icons8-usa-16.png" alt="english-flag"> English 
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -58,10 +60,8 @@
                             <a class="dropdown-item" href="#"><img src="media/icons8-germany-16.png" alt="german-flag"> German</a>
                         </div>
                     </div>
-                </div>
-                <div class="col-2">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary" type="button" id="dropdownMenuButton"
+                    <div class="dropdown dropdown3">
+                        <button class="btn btn-secondary cart-button" type="button" id="dropdownMenuButton"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><svg class="icon icon-cart, purchase, ecommerce, shopping"><use xlink:href="#icon-cart"></use></svg>
                             0 item(s) - $0.00
                         </button>
@@ -72,11 +72,10 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container top-header-section3">
             <ul class="nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                        aria-expanded="false">home</a>
+                <li class="nav-item1 dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">home</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">home 1</a>
                         <a class="dropdown-item" href="#">home 2</a>
@@ -89,18 +88,16 @@
                         <a class="dropdown-item" href="#">home 9</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                        aria-expanded="false">shop</a>
+                <li class="nav-item2 dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">shop</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
                         <a class="dropdown-item" href="#">Something else here</a>
                     
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                        aria-expanded="false">pages</a>
+                <li class="nav-item3 dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">pages</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">headers</a>
                         <a class="dropdown-item" href="#">footers</a>
@@ -116,41 +113,39 @@
                         <a class="dropdown-item" href="#">404 page</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                        aria-expanded="false">portfolio</a>
+                <li class="nav-item4 dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">portfolio</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">classic</a>
                         <a class="dropdown-item" href="#">masonry</a>
                         <a class="dropdown-item" href="#">portfolio posts</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                        aria-expanded="false">elements</a>
+                <li class="nav-item5 dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">elements</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#"></a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        <a class="dropdown-item" href="#"></a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        <a class="dropdown-item" href="#"></a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        <a class="dropdown-item" href="#"></a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">tabs</a>
+                        <a class="dropdown-item" href="#">titles</a>
+                        <a class="dropdown-item" href="#">typography</a>
+                        <a class="dropdown-item" href="#">collapses</a>
+                        <a class="dropdown-item" href="#">animations</a>
+                        <a class="dropdown-item" href="#">grid system</a>
+                        <a class="dropdown-item" href="#">alert boxes</a>
+                        <a class="dropdown-item" href="#">buttons</a>
+                        <a class="dropdown-item" href="#">media</a>
+                        <a class="dropdown-item" href="#">forms</a>
+                        <a class="dropdown-item" href="#">icons</a>
+                        <a class="dropdown-item" href="#">lists</a>
+                        <a class="dropdown-item" href="#">more</a>
                     </div>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item6">
                     <a class="nav-link" href="#">contact us</a>
                 </li>
-                <li>
-                    <form class="form d-flex">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit"><svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg></button>
+                <li class="nav-item7 search-bar">
+                    <form class="form d-inline-flex">
+                        <input class="form-item" type="search" placeholder="   Search here" aria-label="Search">
+                        <button class="btn btn-secondary" type="submit"><svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg></button>
                     </form>
                 </li>
             </ul>
@@ -166,32 +161,38 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="col-2">
+                        <div class="model-img">
                             <img src="media/slide1_1.png" class="model1 img-fluid" alt="person modeling">
                         </div>
-                        <div class="col-1">
+                        <div class="">
                             <div class="carousel-caption caption1">
-                                <h5 class="caption1-sub-header">First slide label</h5>
-                                <p class="caption1-text">Some representative placeholder content for the first slide.</p>
+                                <div><h1 class="caption1-sub-header1 d-inline-block sub-header1">lookbook</h1></div>
+                                <div><h1 class="caption1-sub-header2 d-inline-block sub-header2">spring-summer-2021</h1></div>
+                                <p class="caption1-text">Shop our most elegant suits for any ocassion. We can custom design any suit to your liking. Send us your measurements and we will do the rest. Want those color matching suits from Dumb And Dumber? We got you covered with prices so low you can't say no</p>
+                                <button class="shop-now btn-dark">shop now</button>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="col-3">
+                        <div class="model-img">
                             <img src="media/slide2_1.png" class="model2 img-fluid" alt="person modeling">
                         </div>
                         <div class="carousel-caption caption2">
-                            <h5 class="caption2-sub-header">Second slide label</h5>
-                            <p class="caption2-text">Some representative placeholder content for the second slide.</p>
+                            <div><h1 class="caption2-sub-header1 d-inline-block sub-header1">new</h1></div>
+                            <div><h1 class="caption2-sub-header2 d-inline-block sub-header2">womens collection</h1></div>
+                            <p class="caption2-text">We have what will make you stand out in a crowd. Going out with the girls or having a date night with your husband? Check out our huge selection that will surely make you look your best. From shoes to hats, we have you covered at prices no one can beat.</p>
+                            <button class="shop-now btn-dark">shop now</button>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="col-5">
+                        <div class="model-img">
                             <img src="media/slide3_1.png" class="model3 img-fluid" alt="person modeling">
                         </div>
                         <div class="carousel-caption caption3">
-                            <h5 class="caption3-sub-header">Third slide label</h5>
-                            <p class="caption3-text">Some representative placeholder content for the third slide.</p>
+                            <div><h1 class="caption3-sub-header1 d-inline-block sub-header1">sale</h1></div>
+                            <div><h1 class="caption3-sub-header2 d-inline-block sub-header2">it's here and you want it</h1></div>
+                            <p class="caption3-text">Why shop anywhere else when we have it at the price you can't beat. Found it cheaper? They are lying and we will beat that price. If you want the best in quality at the best price then you are at the right place. Start shopping with us and keep more money in your pocket.</p>
+                            <button class="shop-now btn-dark">shop now</button>
                         </div>
                     </div>
                 </div>
@@ -224,8 +225,8 @@
                     <h1 class="latest-header">latest</h1>
                     <div class="line"></div>
                     <div class="carousel-controls d-flex">
-                        <a href="#link" class="text-decoration-none"> < </a>
-                        <a href="#link" class="text-decoration-none"> > </a>
+                        <a href="#link" class="text-decoration-none faux-control1"><svg class="icon icon-chevron-left"><use xlink:href="#icon-chevron-left"></use></svg></a>
+                        <a href="#link" class="text-decoration-none faux-control2"><svg class="icon icon-chevron-right"><use xlink:href="#icon-chevron-right"></use></svg></a>
                     </div>
                 </div>
                 <div class="latest-text">
@@ -239,7 +240,7 @@
                             <img src="media/item1.jpg" class="img-fluid" alt="clothing item">
                             <div class="card-body">
                                 <h5 class="card-title">Oh look, a shirt</h5>
-                                <img src="media/4.5-star.png" class="img-fluid" alt="star rating">
+                                <img src="media/4.5-star165x29.png" class="star-rate img-fluid" alt="star rating">
                                 <a href="#" class="btn btn-dark add-to-cart">add to cart</a>
                             </div>
                         </div>
@@ -249,7 +250,7 @@
                             <img src="media/item2.jpg" class="img-fluid" alt="clothing item">
                             <div class="card-body">
                                 <h5 class="card-title">Wow, shoes</h5>
-                                <img src="media/2-star.png" class="img-fluid" alt="star rating">
+                                <img src="media/2-star165x31.png" class="star-rate img-fluid" alt="star rating">
                                 <a href="#" class="btn btn-dark add-to-cart">add to cart</a>
                             </div>
                         </div>
@@ -259,7 +260,7 @@
                             <img src="media/item3.jpg" class="img-fluid" alt="clothing item">
                             <div class="card-body">
                                 <h5 class="card-title">This is nice</h5>
-                                <img src="media/5-star.png" class="img-fluid" alt="star rating">
+                                <img src="media/5-star165x29.png" class="star-rate img-fluid" alt="star rating">
                                 <a href="#" class="btn btn-dark add-to-cart">add to cart</a>
                             </div>
                         </div>
@@ -269,7 +270,7 @@
                             <img src="media/item4.jpg" alt="">
                             <div class="card-body">
                                 <h5 class="card-title">Goes great with that dress</h5>
-                                <img src="media/4.5-star.png" class="img-fluid" alt="star rating">
+                                <img src="media/4.5-star165x29.png" class="star-rate img-fluid" alt="star rating">
                                 <a href="#" class="btn btn-dark add-to-cart">add to cart</a>
                             </div>
                         </div>
@@ -280,9 +281,9 @@
         <div class="container main-section4">
             <div class="row">
                 <div class="col-6">
-                    <h1 class="welcome-to-venedor">welcome to venedor</h1>
-                    <p class="welcome-text">Venedor is a fully responsive Magento theme with advanced admin module. Based on Bootstrap’s 12 column 1200px responsive grid theme. Great looks on desktops, tablets and mobiles.</p>
-                    <p class="welcome-text">Venedor is extremely customizable, easy to use and fully responsive. Suitable for every type of store. Great as a starting point for your custom projects. This theme includes several extensions including ajax price slider that will help you improve your sales. We supply full help with our products and after purchase support to all our customers. <a href="#link" class="buy-venedor">Buy Venedor Theme!</a></p>
+                    <h1 class="welcome-to-venedor">Welcome To Venedor</h1>
+                    <p class="welcome-text1">Venedor is a fully responsive Magento theme with advanced admin module. Based on Bootstrap’s 12 column 1200px responsive grid theme. Great looks on desktops, tablets and mobiles.</p>
+                    <p class="welcome-text2">Venedor is extremely customizable, easy to use and fully responsive. Suitable for every type of store. Great as a starting point for your custom projects. This theme includes several extensions including ajax price slider that will help you improve your sales. We supply full help with our products and after purchase support to all our customers. <a href="#link" class="buy-venedor text-decoration-none">Buy Venedor Theme!</a></p>
                 </div>
                 <div class="col-6">
                     <img src="media/venedordevices.png" alt="">
@@ -295,8 +296,8 @@
                     <h1 class="latest-header">on sale</h1>
                     <div class="line"></div>
                     <div class="carousel-controls d-flex">
-                        <a href="#link" class="text-decoration-none"> < </a>
-                        <a href="#link" class="text-decoration-none"> > </a>
+                        <a href="#link" class="text-decoration-none faux-control1"><svg class="icon icon-chevron-left"><use xlink:href="#icon-chevron-left"></use></svg></a>
+                        <a href="#link" class="text-decoration-none faux-control2"><svg class="icon icon-chevron-right"><use xlink:href="#icon-chevron-right"></use></svg></a>
                     </div>
                 </div>
                 <div class="latest-text">
@@ -310,7 +311,7 @@
                             <img src="media/item1.jpg" class="img-fluid" alt="clothing item">
                             <div class="card-body">
                                 <h5 class="card-title">Another shirt?</h5>
-                                <img src="media/4.5-star.png" class="img-fluid" alt="star rating">
+                                <img src="media/4.5-star165x29.png" class="star-rate img-fluid" alt="star rating">
                                 <a href="#" class="btn btn-dark add-to-cart">add to cart</a>
                             </div>
                         </div>
@@ -320,7 +321,7 @@
                             <img src="media/item2.jpg" class="img-fluid" alt="clothing item">
                             <div class="card-body">
                                 <h5 class="card-title">These sparkle</h5>
-                                <img src="media/2-star.png" class="img-fluid" alt="star rating">
+                                <img src="media/2-star165x31.png" class="star-rate img-fluid" alt="star rating">
                                 <a href="#" class="btn btn-dark add-to-cart">add to cart</a>
                             </div>
                         </div>
@@ -330,7 +331,7 @@
                             <img src="media/item3.jpg" class="img-fluid" alt="clothing item">
                             <div class="card-body">
                                 <h5 class="card-title">Dorthy's red slippers</h5>
-                                <img src="media/5-star.png" class="img-fluid" alt="star rating">
+                                <img src="media/5-star165x29.png" class="star-rate img-fluid" alt="star rating">
                                 <a href="#" class="btn btn-dark add-to-cart">add to cart</a>
                             </div>
                         </div>
@@ -340,7 +341,7 @@
                             <img src="media/item4.jpg" alt="">
                             <div class="card-body">
                                 <h5 class="card-title">Yet another shoe you want</h5>
-                                <img src="media/4.5-star.png" class="img-fluid" alt="star rating">
+                                <img src="media/4.5-star165x29.png" class="star-rate img-fluid" alt="star rating">
                                 <a href="#" class="btn btn-dark add-to-cart">add to cart</a>
                             </div>
                         </div>
@@ -354,14 +355,14 @@
                     <h1 class="latest-header">manufacturers</h1>
                     <div class="line"></div>
                     <div class="carousel-controls d-flex">
-                        <a href="#link" class="text-decoration-none"> < </a>
-                        <a href="#link" class="text-decoration-none"> > </a>
+                        <a href="#link" class="text-decoration-none faux-control1"><svg class="icon icon-chevron-left"><use xlink:href="#icon-chevron-left"></use></svg></a>
+                        <a href="#link" class="text-decoration-none faux-control2"><svg class="icon icon-chevron-right"><use xlink:href="#icon-chevron-right"></use></svg></a>
                     </div>
                 </div>
                 <div class="latest-text">
-                    <p class="latest-text-item">some of the brands we carry</p>
+                    <p class="latest-text-item">Some of the brands we carry</p>
                 </div>
-                <div class="manufacturers-img text-center">
+                <div class="manufacturers-img d-inline-flex justify-content-around">
                     <a href="#link" class="logo-brand-link"><img src="media/brand-logo.png" alt="brand logo" class="brand-logo img-fluid"></a>
                     <a href="#link" class="logo-brand-link"><img src="media/brand-logo.png" alt="brand logo" class="brand-logo img-fluid"></a>
                     <a href="#link" class="logo-brand-link"><img src="media/brand-logo.png" alt="brand logo" class="brand-logo img-fluid"></a>
@@ -373,67 +374,109 @@
         </div>
     </main>
     <footer class="footer footer-top" id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-7">
-                    <h3 class="sign-up">sign up to reveive the latest fashion news</h3>
-                </div>
-                <div class="col-4">
-                    <form class="form-inline d-flex sign-up-form">
-                        <input class="form-control" type="email" placeholder="Enter your email address" aria-label="email">
-                        <button class="btn btn-dark text-nowrap sign-up" type="submit">sign up</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="container footer-middle">
-            <div class="row">
-                <div class="col-3">
-                    <h4 class="footer-list">my account</h4>
-                    <ul class="account-list">
-                        <li class="account-list-item">my account</li>
-                        <li class="account-list-item">personal information</li>
-                        <li class="account-list-item">addresses</li>
-                        <li class="account-list-item">discount</li>
-                        <li class="account-list-item">order history</li>
-                        <li class="account-list-item">your vouchers</li>
-                    </ul>
-                </div>
-                <div class="col-3">
-                    <h4 class="footer-list">information</h4>
-                    <ul class="information-list">
-                        <li class="information-list-item">new products</li>
-                        <li class="information-list-item">top sellers</li>
-                        <li class="information-list-item">specials</li>
-                        <li class="information-list-item">manufacturers</li>
-                        <li class="information-list-item">suppliers</li>
-                        <li class="information-list-item">our stores</li>
-                    </ul>
-                </div>
-                <div class="col-3 from-twitter">
-                    <h4 class="twitter-blah">from twitter</h4>
-                    <p class="twitter-ramble">just your typical twitter news...he posted this, she posted that, he said this and she said that. </p>
-                </div>
-                <div class="col-3 like-facebook">
-                    <h4 class="facebook">facebook</h4>
-                    <button class="facebook-like-btn"><svg class="icon icon-thumbs-up"><use xlink:href="#icon-thumbs-up"></use></svg></button>
+        <div class="full-width-footer"> <!-- To Get Full Width Background Color -->
+            <div class="container sign-up-section">
+                <div class="row">
+                    <div class="col-7">
+                        <h3 class="sign-up">sign up to reveive the latest fashion news</h3>
+                    </div>
+                    <div class="col-4">
+                        <form class="form-inline d-flex sign-up-form">
+                            <input class="form-control" type="email" placeholder="   Enter your email address" aria-label="email">
+                            <button class="btn btn-dark text-nowrap sign-up" type="submit">sign up</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="container footer-bottom">
-            <div class="row">
-                <div class="social-links-list">
-                    <a href="#link"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a>
-                    <a href="#link"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a>
-                    <a href="#link"><svg class="icon icon-rss"><use xlink:href="#icon-rss"></use></svg></a>
-                    <a href="#link"><svg class="icon icon-delicious"><use xlink:href="#icon-delicious"></use></svg></a>
-                    <a href="#link"><svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg></a>
-                    <a href="#link"><svg class="icon icon-flickr"><use xlink:href="#icon-flickr"></use></svg></a>
-                    <a href="#link"><svg class="icon icon-skype"><use xlink:href="#icon-skype"></use></svg></a>
-                    <a href="#link"><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a>
+        <div class="full-width-footer-m"> <!-- To Get Full Width Background Color -->
+            <div class="container footer-middle">
+                <div class="row">
+                    <div class="col-3">
+                        <h4 class="footer-list">my account</h4>
+                        <ul class="account-list">
+                            <li class="account-list-item"><a href="#" class="account-list-link text-decoration-none">my account</a></li>
+                            <li class="account-list-item"><a href="#" class="account-list-link text-decoration-none">personal information</a></li>
+                            <li class="account-list-item"><a href="#" class="account-list-link text-decoration-none">addresses</a></li>
+                            <li class="account-list-item"><a href="#" class="account-list-link text-decoration-none">discount</a></li>
+                            <li class="account-list-item"><a href="#" class="account-list-link text-decoration-none">order history</a></li>
+                            <li class="account-list-item"><a href="#" class="account-list-link text-decoration-none">your vouchers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <h4 class="footer-list">information</h4>
+                        <ul class="information-list">
+                            <li class="information-list-item"><a href="#" class="information-list-link text-decoration-none">new products</a></li>
+                            <li class="information-list-item"><a href="#" class="information-list-link text-decoration-none">top sellers</a></li>
+                            <li class="information-list-item"><a href="#" class="information-list-link text-decoration-none">specials</a></li>
+                            <li class="information-list-item"><a href="#" class="information-list-link text-decoration-none">manufacturers</a></li>
+                            <li class="information-list-item"><a href="#" class="information-list-link text-decoration-none">suppliers</a></li>
+                            <li class="information-list-item"><a href="#" class="information-list-link text-decoration-none">our stores</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3 from-twitter">
+                        <h4 class="twitter-blah">from twitter</h4>
+                        <p class="twitter-ramble">Just your typical twitter news...he posted this, she posted that, he said this and she said that. All very important information to know </p>
+                    </div>
+                    <div class="col-3 facebook-name">
+                        <div class=" d-inline-flex">
+                            <h4 class="facebook">facebook</h4>
+                            <button class="facebook-like-btn btn-light" title="Like Us On Facebook"><svg class="icon icon-thumbs-up"><use xlink:href="#icon-thumbs-up"></use></svg> Like</button>
+                        </div>
+                        <p class="facebook-text">10,451,570 like Venedor</p>
+                        <figure class="figure1">
+                            <img src="media/facebook1.jpg" alt="">
+                            <figcaption class="facebook-name text-center">Billy</figcaption>
+                        </figure>
+                        <figure class="figure1">
+                            <img src="media/facebook2.jpg" alt="">
+                            <figcaption class="facebook-name text-center">Austin</figcaption>
+                        </figure>
+                        <figure class="figure1">
+                            <img src="media/facebook3.jpg" alt="">
+                            <figcaption class="facebook-name text-center">Sally</figcaption>
+                        </figure>
+                        <figure class="figure2">
+                            <img src="media/facebook4.jpg" alt="">
+                            <figcaption class="facebook-name text-center">John</figcaption>
+                        </figure>
+                        <figure class="figure2">
+                            <img src="media/facebook5.jpg" alt="">
+                            <figcaption class="facebook-name text-center">Joseph</figcaption>
+                        </figure>
+                        <figure class="figure2">
+                            <img src="media/facebook6.jpg" alt="">
+                            <figcaption class="facebook-name text-center">Kirk</figcaption>
+                        </figure>
+                    </div>
                 </div>
-                <div class="colophon">
-                    <p class="colophon-text">&copy; 2021 Powered By Turner&trade;. All Rights Reserved</p>
+            </div>
+        </div>
+        <div class="full-width-footer-bottom"> <!-- To Get Full Width Background Color -->
+            <div class="container footer-bottom">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="social-links-list">
+                            <button class="social-button social-facebook"><a href="#link" title="Facebook"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a></button>
+                            <button class="social-button social-twitter"><a href="#link" title="Twitter"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a></button>
+                            <button class="social-button social-rss"><a href="#link" title="RSS Feed"><svg class="icon icon-rss"><use xlink:href="#icon-rss"></use></svg></a></button>
+                            <button class="social-button social-delicious"><a href="#link" title="Delicious"><svg class="icon icon-delicious"><use xlink:href="#icon-delicious"></use></svg></a></button>
+                            <button class="social-button social-linkedin"><a href="#link" title="Linkedin"><svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg></a></button>
+                            <button class="social-button social-flickr"><a href="#link" title="Flickr"><svg class="icon icon-flickr"><use xlink:href="#icon-flickr"></use></svg></a></button>
+                            <button class="social-button social-skype"><a href="#link" title="Skype"><svg class="icon icon-skype"><use xlink:href="#icon-skype"></use></svg></a></button>
+                            <button class="social-button social-email"><a href="#link" title="Email"><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a></button>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="colophon">
+                            <p class="colophon-text">&copy; 2021 Powered By Turner&trade;. All Rights Reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="back-to-top-button">
+                            <button class="back-to" title="Back To Top"><a href="#header"><svg class="icon icon-chevron-up back-to-top"><use xlink:href="#icon-chevron-up"></use></svg></a></button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -494,27 +537,36 @@
             </path>
         </symbol>
         <symbol id="icon-delicious" viewBox="0 0 16 16">
-            <path fill="#39f" style="fill: var(--color1, #39f)" d="M8 8h-8v8h8zM16 0h-8v8h8z"></path>
+            <path fill="#39f" style="fill: var(--color1, white)" d="M8 8h-8v8h8zM16 0h-8v8h8z"></path> <!-- Original color #39f -->
         </symbol>
         <symbol id="icon-flickr" viewBox="0 0 16 16">
-            <path fill="#0063dc" style="fill: var(--color2, #0063dc)"
+            <path fill="#0063dc" style="fill: var(--color2, white)"
                 d="M0 8c0 2.049 1.663 3.709 3.71 3.709 2.050 0 3.713-1.66 3.713-3.709s-1.662-3.709-3.713-3.709c-2.047 0-3.71 1.66-3.71 3.709zM8.577 8c0 2.049 1.662 3.709 3.711 3.709 2.042 0 3.711-1.66 3.711-3.709s-1.661-3.709-3.709-3.709c-2.050 0-3.713 1.66-3.713 3.709z">
-            </path>
+            </path> <!-- Original Color #0063dc -->
         </symbol>
         <symbol id="icon-linkedin" viewBox="0 0 16 16">
-            <path fill="#0077b5" style="fill: var(--color3, #0077b5)"
+            <path fill="#0077b5" style="fill: var(--color3, white)"
                 d="M13.631 13.635h-2.369v-3.713c0-0.885-0.018-2.025-1.235-2.025-1.235 0-1.424 0.963-1.424 1.959v3.778h-2.369v-7.635h2.276v1.041h0.031c0.318-0.6 1.091-1.233 2.247-1.233 2.401 0 2.845 1.58 2.845 3.637zM3.558 4.955c-0.763 0-1.375-0.617-1.375-1.377s0.613-1.375 1.375-1.375c0.76 0 1.376 0.617 1.376 1.375s-0.617 1.377-1.376 1.377zM4.746 13.635h-2.376v-7.635h2.376zM14.817 0h-13.636c-0.653 0-1.181 0.516-1.181 1.153v13.695c0 0.637 0.528 1.153 1.181 1.153h13.634c0.652 0 1.185-0.515 1.185-1.153v-13.695c0-0.637-0.533-1.153-1.185-1.153z">
-            </path>
+            </path> <!-- Original Color #0077b5 -->
         </symbol>
         <symbol id="icon-rss" viewBox="0 0 16 16">
-            <path fill="#ffa500" style="fill: var(--color4, #ffa500)"
+            <path fill="#ffa500" style="fill: var(--color4, white)"
                 d="M12.799 16c0-7.022-5.777-12.8-12.799-12.8v-3.2c8.777 0 16 7.223 16 16zM2.194 11.61c1.209 0 2.195 0.986 2.195 2.197 0 1.209-0.99 2.193-2.201 2.193-1.209 0-2.189-0.983-2.189-2.193s0.983-2.196 2.194-2.197zM10.606 16h-3.11c0-4.113-3.383-7.497-7.496-7.497v-3.11c5.818 0 10.606 4.789 10.606 10.607z">
-            </path>
+            </path> <!-- Original Color #ffa500 -->
         </symbol>
         <symbol id="icon-skype" viewBox="0 0 16 16">
-            <path fill="#00aff0" style="fill: var(--color5, #00aff0)"
+            <path fill="#00aff0" style="fill: var(--color5, white)"
                 d="M8.046 12.583c-2.682 0-3.88-1.319-3.88-2.309 0-0.51 0.374-0.864 0.889-0.864 1.149 0 0.849 1.651 2.991 1.651 1.094 0 1.7-0.597 1.7-1.207 0-0.367-0.179-0.773-0.903-0.953l-2.384-0.597c-1.92-0.483-2.269-1.524-2.269-2.501 0-2.031 1.907-2.794 3.699-2.794 1.647 0 3.595 0.915 3.595 2.133 0 0.523-0.459 0.827-0.969 0.827-0.979 0-0.799-1.358-2.776-1.358-0.979 0-1.528 0.443-1.528 1.078s0.769 0.839 1.438 0.991l1.758 0.391c1.927 0.433 2.416 1.564 2.416 2.629 0 1.651-1.268 2.883-3.815 2.883zM15.399 9.329l-0.019 0.090-0.029-0.16c0.010 0.030 0.029 0.049 0.039 0.080 0.080-0.45 0.121-0.909 0.121-1.368 0-1.019-0.201-2.008-0.599-2.947-0.379-0.899-0.93-1.708-1.618-2.397-0.699-0.689-1.498-1.237-2.397-1.617-0.879-0.421-1.867-0.62-2.885-0.62-0.48 0-0.963 0.047-1.429 0.136l0.079 0.040-0.159-0.022 0.079-0.017c-0.643-0.344-1.363-0.527-2.095-0.527-1.193 0-2.313 0.465-3.157 1.311s-1.309 1.971-1.309 3.166c0 0.762 0.195 1.51 0.563 2.172l0.013-0.083 0.027 0.159-0.040-0.077c-0.076 0.43-0.115 0.866-0.115 1.303 0 1.020 0.2 2.011 0.589 2.944 0.379 0.908 0.919 1.717 1.618 2.406 0.689 0.7 1.498 1.238 2.397 1.628 0.929 0.4 1.918 0.599 2.936 0.599 0.439 0 0.889-0.040 1.318-0.119l-0.079-0.041 0.16 0.031-0.090 0.020c0.668 0.379 1.417 0.581 2.196 0.581 1.189 0 2.306-0.46 3.155-1.309 0.839-0.839 1.308-1.967 1.308-3.166 0-0.759-0.199-1.508-0.569-2.177z">
-            </path>
+            </path> <!-- Original Color #00aff0 -->
+        </symbol>
+        <symbol id="icon-chevron-left" viewBox="0 0 21 28">
+            <path d="M18.297 4.703l-8.297 8.297 8.297 8.297c0.391 0.391 0.391 1.016 0 1.406l-2.594 2.594c-0.391 0.391-1.016 0.391-1.406 0l-11.594-11.594c-0.391-0.391-0.391-1.016 0-1.406l11.594-11.594c0.391-0.391 1.016-0.391 1.406 0l2.594 2.594c0.391 0.391 0.391 1.016 0 1.406z"></path>
+        </symbol>
+        <symbol id="icon-chevron-right" viewBox="0 0 19 28">
+            <path d="M17.297 13.703l-11.594 11.594c-0.391 0.391-1.016 0.391-1.406 0l-2.594-2.594c-0.391-0.391-0.391-1.016 0-1.406l8.297-8.297-8.297-8.297c-0.391-0.391-0.391-1.016 0-1.406l2.594-2.594c0.391-0.391 1.016-0.391 1.406 0l11.594 11.594c0.391 0.391 0.391 1.016 0 1.406z"></path>
+        </symbol>
+        <symbol id="icon-chevron-up" viewBox="0 0 28 28">
+            <path d="M26.297 20.797l-2.594 2.578c-0.391 0.391-1.016 0.391-1.406 0l-8.297-8.297-8.297 8.297c-0.391 0.391-1.016 0.391-1.406 0l-2.594-2.578c-0.391-0.391-0.391-1.031 0-1.422l11.594-11.578c0.391-0.391 1.016-0.391 1.406 0l11.594 11.578c0.391 0.391 0.391 1.031 0 1.422z"></path>
         </symbol>
     </defs>
 </svg>

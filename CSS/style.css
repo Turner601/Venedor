@@ -19,8 +19,110 @@
     display: block;
 }
 
+.social-facebook:hover {
+    background: #4267B2;
+}
+
+.social-twitter:hover {
+    background: #1DA1F2;
+}
+
+.social-rss:hover {
+    background: #ffa500;
+}
+
+.social-delicious:hover {
+    background: #39f;
+}
+
+.social-linkedin:hover {
+    background: #0077b5;
+}
+
+.social-flickr:hover {
+    background: #0063dc;
+}
+
+.social-skype:hover {
+    background: #00aff0;
+}
+
+.social-email:hover {
+    background: red;
+}
+
+/* ---------- Start Header ---------- */
+
+.full-width-header {
+    background-color: #f2f4f1;
+}
+
+.top-header-section1 {
+    padding: 5px;
+}
+
+.top-nav1-item {
+    padding-left: 15px;
+    text-transform: capitalize;
+    color: grey;
+}
+
+.accounts {
+    padding-left: 15px;
+}
+
+.login-link, .create-account {
+    color: #27b2c9;
+}
+
+.top-header-section2 {
+    padding: 25px 0;
+}
+
+.shop-buttons {
+    padding: 25px;
+}
+
+.currency-button {
+    margin-right: 4px;
+    border-radius: 0;
+}
+
+.lang-button {
+    margin-right: 10px;
+    border-radius: 0;
+}
+
+.cart-button {
+    background-color: #21aeb8;
+    border-color: #21aeb8;
+    border-radius: 0;
+}
+
+.top-header-section3 .nav-link {
+    margin-left: -25px;
+    padding: 25px;
+    color: black;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.dropdown-item {
+    text-transform: uppercase;
+}
+
+.search-bar {
+    margin-left: 465px;
+}
+
+.form-control {
+    border: 1px solid grey;
+}
+
+/* ---------- Start Main ---------- */
+
 .carousel-inner {
-    background-color: black;
+    background-color: #d6d6d4;
     height: 600px;
 }
 
@@ -39,12 +141,65 @@
     padding: 0;
 }
 
+.caption1 {
+    margin-left: 375px;
+    margin-bottom: 175px;
+}
+
+.caption2 {
+    margin-left: 220px;
+    margin-bottom: 150px;
+}
+
+.caption3 {
+    margin-right: 650px;
+    margin-bottom: 150px;
+}
+
+.sub-header1 {
+    margin: 0;
+    padding: 10px 15px;
+    background-color: #21aeb8;
+    text-transform: uppercase;
+}
+
+.sub-header2 {
+    margin: 0;
+    padding: 10px 15px;
+    background-color: #42474a;
+    text-transform: capitalize;
+}
+
+.caption1-text {
+    margin-left: 172px;
+    max-width: 600px;
+    padding-top: 15px;
+    color: black;
+}
+
+.caption2-text {
+    margin-left: 250px;
+    width: 600px;
+    padding: 15px;
+    color: black;
+}
+
+.caption3-text {
+    color: black;
+    padding: 15px;
+}
+
+.shop-now {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
 .carousel-control-prev {
-    margin-left: -120px;
+    margin-left: -105px;
 }
 
 .carousel-control-next {
-    margin-right: -120px;
+    margin-right: -105px;
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -52,8 +207,27 @@
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
-    padding: 15px;
-    border: 2px solid white;
+    padding: 20px 34px;
+    border: 1px solid grey;
+    background-color: grey;
+    border-radius: 3px;
+}
+
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+    border-color: #21aeb8;
+    background-color: #21aeb8;
+}
+
+.carousel .carousel-control-next, .carousel .carousel-control-prev {
+    visibility: hidden;
+}
+
+.carousel:hover .carousel-control-next, .carousel:hover .carousel-control-prev {
+    visibility: visible;
+}
+
+.main-section2 {
+    padding-top: 50px;
 }
 
 .latest {
@@ -76,19 +250,194 @@
     margin: 0 10px;
 }
 
+.latest a:hover {
+    background-color: #21aeb8;
+    color: white;
+}
+
 .latest-text {
     margin: -45px 0;
+}
+
+.faux-control1, .faux-control2 {
+    margin: 1px;
+    background-color: lightgrey;
+    padding: 6px 20px;
+    color: grey;
 }
 
 .card {
     border: none;
 }
 
+.card-body .star-rate {
+    margin-bottom: 10px;
+}
+
+.add-to-cart {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.add-to-cart:hover {
+    background-color: #21aeb8;
+    border-color: #21aeb8;
+}
+
+.welcome-to-venedor {
+    border-left: 4px solid #21aeb8;
+    padding-left: 8px;
+}
+
+.welcome-text1, .welcome-text2 {
+    font-size: 18px;
+    text-indent: 30px;
+}
+
+.welcome-text2 {
+    margin-top: -15px;
+}
+
+.buy-venedor {
+    color: #21aeb8;
+}
+
+.manufacturers-img {
+    margin: 10px 0 100px;
+}
+
+/* ---------- Start Footer ---------- */
+
+.full-width-footer {
+    background-color: #d6d6d6;
+}
+
+.sign-up {
+    text-transform: uppercase;
+}
+
+.sign-up-section {
+    padding: 30px;
+}
+
+.sign-up-form {
+    margin-right: -100px;
+}
+
 .form-control {
-    border: 4px solid yellow
+    border: 4px solid gold;
+    background-color: #d6d6d6;
+}
+
+.full-width-footer-m {
+    background-color: #434b4d;
+}
+
+.footer-middle {
+    padding: 100px 0;
+    color: white;
+}
+
+.footer-list {
+    text-transform: uppercase;
+}
+
+.account-list, .information-list {
+    margin-top: 25px;
+    padding: 0;
+    line-height: 35px;
+}
+
+.account-list-item, .information-list-item {
+    text-transform: capitalize;
+}
+
+.account-list-link, .information-list-link {
+    color: white;
+}
+
+.account-list-link:hover, .information-list-link:hover {
+    color: #21aeb8;
+}
+
+.footer-middle ul {
+    list-style-type: none;
+}
+
+.footer-middle li::before {
+    content: "■ ";
+    color: #21aeb8;
 }
 
 .like-facebook {
     display: flex;
     flex-direction: row;
+}
+
+.from-twitter {
+    margin-left: 45px;
+}
+
+.twitter-blah {
+    text-transform: uppercase;
+}
+
+.facebook-name {
+    margin-left: 45px;
+}
+
+.facebook {
+    margin-right: 45px;
+    text-transform: uppercase;
+}
+
+.icon-thumbs-up {
+    color: blue;
+}
+
+.figure1 {
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.figure2 {
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.facebook-name {
+    margin: 0;
+}
+
+.full-width-footer-bottom {
+    background-color: #434b4d;
+    border-top: 1px solid #2b2e2f;
+}
+
+.footer-bottom {
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.social-links-list .icon {
+    margin-right: 2px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.social-button {
+    background: grey;
+}
+
+.colophon-text {
+    color: white;
+}
+
+.back-to {
+    background: #21aeb8;
+}
+
+.icon-chevron-up {
+    margin-bottom: 5px;
+    color: white;
 }
