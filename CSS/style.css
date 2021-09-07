@@ -270,6 +270,49 @@
     border: none;
 }
 
+.img-price {
+    position: relative;
+    padding-top: 23px;
+    top: -90px;
+    left: 225px;
+    border-radius: 50%;
+    background-color: #21aeb8;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    width: 85px;
+    height: 85px;
+}
+
+.img-text-store, .img-text-new, .img-text-discount {
+    position: relative;
+    top: 15px;
+    left: 30px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.img-text-new {
+    padding: 5px;
+    background-color: #21aeb8;
+    width: 70px;
+}
+
+.img-text-discount {
+    padding: 5px;
+    background-color: #ff0096;
+    width: 70px;
+}
+
+.img-text-store {
+    padding: 5px;
+    background-color: grey;
+    width: 185px;
+    /* visibility: hidden; */
+}
+
 .card-body .star-rate {
     margin-bottom: 10px;
 }
