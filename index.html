@@ -12,16 +12,16 @@
 </head>
 <body>
     <header class="header top-header" id="header">
-        <div class="full-width-header"> <!-- To get background color full width of page -->
+        <div class="full-width-header full-width"> <!-- To get background color full width of page -->
             <div class="container top-header-section1">
                 <div class="row">
-                    <div class="col-6 top-nav1">
+                    <div class="col-sm-12 col-md-12 col-lg-6 top-nav1">
                         <a href="#link" class="top-nav1-item text-decoration-none"><img src="media/pencil.png" class="icon"> my wishlist</a>
                         <a href="#link" class="top-nav1-item text-decoration-none"><svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg> my account</a>
                         <a href="#link" class="top-nav1-item text-decoration-none"><svg class="icon icon-cart"><use xlink:href="#icon-cart"></use></svg> my cart</a>
                         <a href="#link" class="top-nav1-item text-decoration-none"><svg class="icon icon-checkmark"><use xlink:href="#icon-checkmark"></use></svg> checkout</a>
                     </div>
-                    <div class="col-6 d-flex justify-content-end top-nav2">
+                    <div class="col-sm-12 col-md-12 col-lg-6 d-flex justify-content-lg-end justify-content-sm-center top-nav2">
                         <div class="header-text">Welcome To Venedor!</div>
                         <div class="accounts">
                             <a href="#link" class="login-link"> Login</a>
@@ -34,12 +34,12 @@
         </div>
         <div class="container top-header-section2">
             <div class="row">
-                <div class="col-4">
+                <div class="col-sm-3 col-lg-4">
                     <div class="logo-img">
                         <img src="media/venedorlogo.png" alt="logo picture" class="logo-picture img-fluid">
                     </div>
                 </div>
-                <div class="col-8 d-inline-flex justify-content-end shop-buttons">
+                <div class="col-sm-12 col-lg-8 d-inline-flex justify-content-end shop-buttons">
                     <div class="dropdown dropdown1">
                         <button class="btn btn-secondary currency-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             &dollar; US Dollar
@@ -73,86 +73,94 @@
             </div>
         </div>
         <div class="container top-header-section3">
-            <ul class="nav">
-                <li class="nav-item1 dropdown">
-                    <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">home</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">home 1</a>
-                        <a class="dropdown-item" href="#">home 2</a>
-                        <a class="dropdown-item" href="#">home 3</a>
-                        <a class="dropdown-item" href="#">home 4</a>
-                        <a class="dropdown-item" href="#">home 5</a>
-                        <a class="dropdown-item" href="#">home 6</a>
-                        <a class="dropdown-item" href="#">home 7</a>
-                        <a class="dropdown-item" href="#">home 8</a>
-                        <a class="dropdown-item" href="#">home 9</a>
-                    </div>
-                </li>
-                <li class="nav-item2 dropdown">
-                    <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">shop</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    
-                </li>
-                <li class="nav-item3 dropdown">
-                    <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">pages</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">headers</a>
-                        <a class="dropdown-item" href="#">footers</a>
-                        <a class="dropdown-item" href="#">product</a>
-                        <a class="dropdown-item" href="#">cart</a>
-                        <a class="dropdown-item" href="#">category</a>
-                        <a class="dropdown-item" href="#">blog</a>
-                        <a class="dropdown-item" href="#">checkout</a>
-                        <a class="dropdown-item" href="#">about us</a>
-                        <a class="dropdown-item" href="#">register account</a>
-                        <a class="dropdown-item" href="#">compare products</a>
-                        <a class="dropdown-item" href="#">login</a>
-                        <a class="dropdown-item" href="#">404 page</a>
-                    </div>
-                </li>
-                <li class="nav-item4 dropdown">
-                    <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">portfolio</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">classic</a>
-                        <a class="dropdown-item" href="#">masonry</a>
-                        <a class="dropdown-item" href="#">portfolio posts</a>
-                    </div>
-                </li>
-                <li class="nav-item5 dropdown">
-                    <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">elements</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">tabs</a>
-                        <a class="dropdown-item" href="#">titles</a>
-                        <a class="dropdown-item" href="#">typography</a>
-                        <a class="dropdown-item" href="#">collapses</a>
-                        <a class="dropdown-item" href="#">animations</a>
-                        <a class="dropdown-item" href="#">grid system</a>
-                        <a class="dropdown-item" href="#">alert boxes</a>
-                        <a class="dropdown-item" href="#">buttons</a>
-                        <a class="dropdown-item" href="#">media</a>
-                        <a class="dropdown-item" href="#">forms</a>
-                        <a class="dropdown-item" href="#">icons</a>
-                        <a class="dropdown-item" href="#">lists</a>
-                        <a class="dropdown-item" href="#">more</a>
-                    </div>
-                </li>
-                <li class="nav-item6">
-                    <a class="nav-link" href="#">contact us</a>
-                </li>
-                <li class="nav-item7 search-bar">
-                    <form class="form d-inline-flex">
-                        <input class="form-item" type="search" placeholder="   Search here" aria-label="Search">
-                        <button class="btn btn-secondary" type="submit"><svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg></button>
-                    </form>
-                </li>
-            </ul>
+            <div class="row">
+                <div class="col-sm-9 col-md-12 col-lg-9 d-md-flex justify-content-md-center">
+                    <ul class="nav top-header-nav">
+                        <li class="nav-item1 dropdown">
+                            <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">home</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">home 1</a>
+                                <a class="dropdown-item" href="#">home 2</a>
+                                <a class="dropdown-item" href="#">home 3</a>
+                                <a class="dropdown-item" href="#">home 4</a>
+                                <a class="dropdown-item" href="#">home 5</a>
+                                <a class="dropdown-item" href="#">home 6</a>
+                                <a class="dropdown-item" href="#">home 7</a>
+                                <a class="dropdown-item" href="#">home 8</a>
+                                <a class="dropdown-item" href="#">home 9</a>
+                            </div>
+                        </li>
+                        <li class="nav-item2 dropdown">
+                            <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">shop</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            
+                        </li>
+                        <li class="nav-item3 dropdown">
+                            <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">pages</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">headers</a>
+                                <a class="dropdown-item" href="#">footers</a>
+                                <a class="dropdown-item" href="#">product</a>
+                                <a class="dropdown-item" href="#">cart</a>
+                                <a class="dropdown-item" href="#">category</a>
+                                <a class="dropdown-item" href="#">blog</a>
+                                <a class="dropdown-item" href="#">checkout</a>
+                                <a class="dropdown-item" href="#">about us</a>
+                                <a class="dropdown-item" href="#">register account</a>
+                                <a class="dropdown-item" href="#">compare products</a>
+                                <a class="dropdown-item" href="#">login</a>
+                                <a class="dropdown-item" href="#">404 page</a>
+                            </div>
+                        </li>
+                        <li class="nav-item4 dropdown">
+                            <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">portfolio</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">classic</a>
+                                <a class="dropdown-item" href="#">masonry</a>
+                                <a class="dropdown-item" href="#">portfolio posts</a>
+                            </div>
+                        </li>
+                        <li class="nav-item5 dropdown">
+                            <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">elements</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">tabs</a>
+                                <a class="dropdown-item" href="#">titles</a>
+                                <a class="dropdown-item" href="#">typography</a>
+                                <a class="dropdown-item" href="#">collapses</a>
+                                <a class="dropdown-item" href="#">animations</a>
+                                <a class="dropdown-item" href="#">grid system</a>
+                                <a class="dropdown-item" href="#">alert boxes</a>
+                                <a class="dropdown-item" href="#">buttons</a>
+                                <a class="dropdown-item" href="#">media</a>
+                                <a class="dropdown-item" href="#">forms</a>
+                                <a class="dropdown-item" href="#">icons</a>
+                                <a class="dropdown-item" href="#">lists</a>
+                                <a class="dropdown-item" href="#">more</a>
+                            </div>
+                        </li>
+                        <li class="nav-item6">
+                            <a class="nav-link text-nowrap" href="#">contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-12 d-md-flex justify-content-md-center col-lg-3">
+                    <ul class="search-bar">
+                        <li class="nav-item7 search-bar-content">
+                            <form class="form d-inline-flex">
+                                <input class="form-item" type="search" placeholder="   Search here" aria-label="Search">
+                                <button class="btn btn-secondary" type="submit"><svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg></button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <main class="main" id="main">
-        <div class="container-fluid main-section1">
+        <div class="container-fluid d-none d-lg-block main-section1">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -208,13 +216,13 @@
         </div>
         <div class="container main-section2">
             <div class="row">
-                <div class="col-4">
+                <div class="col-sm-8 col-md-4 quick-search">
                     <a href="#link" title="Free Shipping After $150"><img src="media/middle-banner-1.png" alt="free shipping" class="img-fluid free-shipping"></a>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-8 col-md-4 quick-search">
                     <a href="#link" title=" SALE SALE SALE"><img src="media/middle-banner-2.png" alt="sale" class="img-fluid sale"></a>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-8 col-md-4 quick-search">
                     <a href="#link" title="The Latest Stuff"><img src="media/middle-banner-3.png" alt="new arrivals" class="img-fluid new-arrivals"></a>
                 </div>
             </div>
@@ -235,9 +243,9 @@
             </div>
             <div class="container">
                 <div class="row text-center">
-                    <div class="col-3">
+                    <div class="col-sm-6 col-md-6 col-lg-3">
                         <div class="card">
-                            <p class="img-text-new">new</p>
+                            <p class="img-text-new card-text-top">new</p>
                             <img src="media/item1.jpg" class="img-fluid" alt="clothing item"><p class="img-price">$999</p>
                             <div class="card-body">
                                 <h5 class="card-title">Oh look, a shirt</h5>
@@ -246,9 +254,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-6 col-md-6 col-lg-3">
                         <div class="card">
-                            <p class="img-text-store">not in stores</p>
+                            <p class="img-text-store card-text-top">not in stores</p>
                             <img src="media/item2.jpg" class="img-fluid" alt="clothing item"><p class="img-price">$799</p>
                             <div class="card-body">
                                 <h5 class="card-title">Wow, shoes</h5>
@@ -257,9 +265,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-6 col-md-6 col-lg-3">
                         <div class="card">
-                            <p class="img-text-new">new</p>
+                            <p class="img-text-new card-text-top">new</p>
                             <img src="media/item3.jpg" class="img-fluid" alt="clothing item"><p class="img-price">$699</p>
                             <div class="card-body">
                                 <h5 class="card-title">This is nice</h5>
@@ -268,12 +276,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-6 col-md-6 col-lg-3">
                         <div class="card">
-                            <p class="img-text-discount">-25%</p>
+                            <p class="img-text-discount card-text-top">-25%</p>
                             <img src="media/item4.jpg" alt="clothing item"><p class="img-price">$899</p>
                             <div class="card-body">
-                                <h5 class="card-title">Goes great with that dress</h5>
+                                <h5 class="card-title">Perfect</h5>
                                 <img src="media/4.5-star165x29.png" class="star-rate img-fluid" alt="star rating">
                                 <a href="#" class="btn btn-dark add-to-cart" title="Add To Your Cart">add to cart</a>
                             </div>
@@ -283,34 +291,34 @@
             </div>
         </div>
         <div class="container main-section4">
-            <div class="row">
-                <div class="col-6">
+            <div class="row d-sm-inline d-md-inline d-lg-flex">
+                <div class="col-sm-12 col-md-12 col-lg-6">
                     <h1 class="welcome-to-venedor">Welcome To Venedor</h1>
                     <p class="welcome-text1">Venedor is a fully responsive Magento theme with advanced admin module. Based on Bootstrap’s 12 column 1200px responsive grid theme. Great looks on desktops, tablets and mobiles.</p>
                     <p class="welcome-text2">Venedor is extremely customizable, easy to use and fully responsive. Suitable for every type of store. Great as a starting point for your custom projects. This theme includes several extensions including ajax price slider that will help you improve your sales. We supply full help with our products and after purchase support to all our customers. <a href="#link" class="buy-venedor text-decoration-none" title="Buy Venedor">Buy Venedor Theme!</a></p>
                 </div>
-                <div class="col-6">
-                    <img src="media/venedordevices.png" alt="">
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <img src="media/venedordevices.png" class="img-fluid" alt="">
                 </div>
             </div>
         </div>
         <div class="container main-section5">
             <div class="row">
-                <div class="latest">
-                    <h1 class="latest-header">on sale</h1>
+                <div class="latest on-sale">
+                    <h1 class="latest-header on-sale">on sale</h1>
                     <div class="line"></div>
                     <div class="carousel-controls d-flex">
                         <a href="#link" class="text-decoration-none faux-control1"><svg class="icon icon-chevron-left"><use xlink:href="#icon-chevron-left"></use></svg></a>
                         <a href="#link" class="text-decoration-none faux-control2"><svg class="icon icon-chevron-right"><use xlink:href="#icon-chevron-right"></use></svg></a>
                     </div>
                 </div>
-                <div class="latest-text">
-                    <p class="latest-text-item">Only with us can you get a new model with a discount</p>
+                <div class="latest-text on-sale-text">
+                    <p class="latest-text-item on-sale-text-item">Only with us can you get a new model with a discount</p>
                 </div>
             </div>
             <div class="container">
                 <div class="row text-center">
-                    <div class="col-3">
+                    <div class="col-sm-6 col-md-6 col-lg-3">
                         <div class="card">
                             <p class="img-text-discount">-50%</p>
                             <img src="media/item1.jpg" class="img-fluid" alt="clothing item"><p class="img-price">$199</p>
@@ -321,7 +329,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-6 col-md-6 col-lg-3">
                         <div class="card">
                             <p class="img-text-discount">-15%</p>
                             <img src="media/item2.jpg" class="img-fluid" alt="clothing item"><p class="img-price">$299</p>
@@ -332,7 +340,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-6 col-md-6 col-lg-3">
                         <div class="card">
                             <p class="img-text-discount">-30%</p>
                             <img src="media/item3.jpg" class="img-fluid" alt="clothing item"><p class="img-price">$399</p>
@@ -343,12 +351,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-6 col-md-6 col-lg-3">
                         <div class="card">
                             <p class="img-text-discount">-45%</p>
                             <img src="media/item4.jpg" alt=""><p class="img-price">$499</p>
                             <div class="card-body">
-                                <h5 class="card-title">Yet another shoe you want</h5>
+                                <h5 class="card-title">Black Stallion</h5>
                                 <img src="media/4.5-star165x29.png" class="star-rate img-fluid" alt="star rating">
                                 <a href="#" class="btn btn-dark add-to-cart" title="Add To Your Cart">add to cart</a>
                             </div>
@@ -382,13 +390,13 @@
         </div>
     </main>
     <footer class="footer footer-top" id="footer">
-        <div class="full-width-footer"> <!-- To Get Full Width Background Color -->
+        <div class="full-width-footer full-width"> <!-- To Get Full Width Background Color -->
             <div class="container sign-up-section">
                 <div class="row">
-                    <div class="col-7">
-                        <h3 class="sign-up">sign up to reveive the latest fashion news</h3>
+                    <div class="col-sm-12 col-md-7">
+                        <h3 class="sign-up">sign up for the latest fashion news</h3>
                     </div>
-                    <div class="col-4">
+                    <div class="col-sm-9 col-md-4">
                         <form class="form-inline d-flex sign-up-form">
                             <input class="form-control" type="email" placeholder="   Enter your email address" aria-label="email">
                             <button class="btn btn-dark text-nowrap sign-up" type="submit" title="Sign Up For Our Newsletter">sign up</button>
@@ -397,10 +405,10 @@
                 </div>
             </div>
         </div>
-        <div class="full-width-footer-m"> <!-- To Get Full Width Background Color -->
+        <div class="full-width-footer-m full-width"> <!-- To Get Full Width Background Color -->
             <div class="container footer-middle">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-sm-12 text-sm-center text-md-left col-md-4">
                         <h4 class="footer-list">my account</h4>
                         <ul class="account-list">
                             <li class="account-list-item"><a href="#" class="account-list-link text-decoration-none">my account</a></li>
@@ -411,7 +419,7 @@
                             <li class="account-list-item"><a href="#" class="account-list-link text-decoration-none">your vouchers</a></li>
                         </ul>
                     </div>
-                    <div class="col-2">
+                    <div class="col-sm-12 text-sm-center text-md-left col-md-3">
                         <h4 class="footer-list">information</h4>
                         <ul class="information-list">
                             <li class="information-list-item"><a href="#" class="information-list-link text-decoration-none">new products</a></li>
@@ -422,48 +430,50 @@
                             <li class="information-list-item"><a href="#" class="information-list-link text-decoration-none">our stores</a></li>
                         </ul>
                     </div>
-                    <div class="col-3 from-twitter">
+                    <div class="col-sm-10 text-sm-center text-md-left col-md-4 from-twitter">
                         <h4 class="twitter-blah">from twitter</h4>
                         <p class="twitter-ramble">Just your typical twitter news...he posted this, she posted that, he said this and she said that. All very important information to know </p>
                     </div>
-                    <div class="col-3 facebook-name">
+                    <div class="col-sm-12 text-sm-center text-md-left col-md-12 facebook-name">
                         <div class=" d-inline-flex">
                             <h4 class="facebook">facebook</h4>
                             <button class="facebook-like-btn btn-light" title="Like Us On Facebook"><svg class="icon icon-thumbs-up"><use xlink:href="#icon-thumbs-up"></use></svg> Like</button>
                         </div>
-                        <p class="facebook-text">10,451,570 like Venedor</p>
-                        <figure class="figure1">
-                            <img src="media/facebook1.jpg" alt="">
-                            <figcaption class="facebook-name text-center">Billy</figcaption>
-                        </figure>
-                        <figure class="figure1">
-                            <img src="media/facebook2.jpg" alt="">
-                            <figcaption class="facebook-name text-center">Austin</figcaption>
-                        </figure>
-                        <figure class="figure1">
-                            <img src="media/facebook3.jpg" alt="">
-                            <figcaption class="facebook-name text-center">Sally</figcaption>
-                        </figure>
-                        <figure class="figure2">
-                            <img src="media/facebook4.jpg" alt="">
-                            <figcaption class="facebook-name text-center">John</figcaption>
-                        </figure>
-                        <figure class="figure2">
-                            <img src="media/facebook5.jpg" alt="">
-                            <figcaption class="facebook-name text-center">Joseph</figcaption>
-                        </figure>
-                        <figure class="figure2">
-                            <img src="media/facebook6.jpg" alt="">
-                            <figcaption class="facebook-name text-center">Kirk</figcaption>
-                        </figure>
+                        <p class="facebook-text">65,451,570 like Venedor By Turner</p>
+                        <div class="facebook-pictures">
+                            <figure class="figure1">
+                                <img src="media/facebook1.jpg" alt="">
+                                <figcaption class="facebook-name text-center">Billy</figcaption>
+                            </figure>
+                            <figure class="figure1">
+                                <img src="media/facebook2.jpg" alt="">
+                                <figcaption class="facebook-name text-center">Austin</figcaption>
+                            </figure>
+                            <figure class="figure1">
+                                <img src="media/facebook3.jpg" alt="">
+                                <figcaption class="facebook-name text-center">Sally</figcaption>
+                            </figure>
+                            <figure class="figure2">
+                                <img src="media/facebook4.jpg" alt="">
+                                <figcaption class="facebook-name text-center">John</figcaption>
+                            </figure>
+                            <figure class="figure2">
+                                <img src="media/facebook5.jpg" alt="">
+                                <figcaption class="facebook-name text-center">Joseph</figcaption>
+                            </figure>
+                            <figure class="figure2">
+                                <img src="media/facebook6.jpg" alt="">
+                                <figcaption class="facebook-name text-center">Kirk</figcaption>
+                            </figure>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="full-width-footer-bottom"> <!-- To Get Full Width Background Color -->
+        <div class="full-width-footer-bottom full-width"> <!-- To Get Full Width Background Color -->
             <div class="container footer-bottom">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-sm-12 text-sm-center col-md-4 footer-bottom-content">
                         <div class="social-links-list">
                             <button class="social-button social-facebook"><a href="#link" title="Facebook"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a></button>
                             <button class="social-button social-twitter"><a href="#link" title="Twitter"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a></button>
@@ -475,12 +485,12 @@
                             <button class="social-button social-email"><a href="#link" title="Email"><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a></button>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-sm-12 text-sm-center col-md-6 footer-bottom-content">
                         <div class="colophon">
                             <p class="colophon-text">&copy; 2021 Powered By Turner&trade;. All Rights Reserved</p>
                         </div>
                     </div>
-                    <div class="col-1">
+                    <div class="col-sm-12 text-sm-center col-md-1 footer-bottom-content">
                         <div class="back-to-top-button">
                             <button class="back-to" title="Back To Top"><a href="#header"><svg class="icon icon-chevron-up back-to-top"><use xlink:href="#icon-chevron-up"></use></svg></a></button>
                         </div>
